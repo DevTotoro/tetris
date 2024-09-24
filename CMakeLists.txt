@@ -21,7 +21,13 @@ if (NOT raylib_FOUND) # If there's none, fetch and build raylib
     endif()
 endif()
 
-add_executable(tetris src/main.cpp)
+add_executable(
+        tetris
+
+        src/main.cpp
+        src/application.cpp
+        src/application.h
+)
 
 target_link_libraries(${PROJECT_NAME} raylib)
 

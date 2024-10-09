@@ -4,22 +4,25 @@
 
 namespace Tetris {
     void Start() {
-        InitWindow(800, 450, "Tetris");
+        InitWindow(Game::WIDTH, Game::HEIGHT, "Tetris");
         SetTargetFPS(60);
 
+        const Game game;
+
         while (!WindowShouldClose())
-            UpdateDrawFrame();
+            UpdateDrawFrame(game);
 
         CloseWindow();
     }
 
-    void UpdateDrawFrame() {
+    void UpdateDrawFrame(const Game& game) {
         BeginDrawing();
 
-        ClearBackground(RAYWHITE);
+        ClearBackground(BLACK);
 
-        DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+        game.Draw();
 
         EndDrawing();
     }
+
 }

@@ -27,6 +27,15 @@ add_executable(
         src/main.cpp
         src/application.cpp
         src/application.h
+
+        src/lib/constants.h
+        src/lib/types.h
+        src/lib/utils.h
+
+        src/core/game.cpp
+        src/core/game.h
+        src/core/grid.cpp
+        src/core/grid.h
 )
 
 target_link_libraries(${PROJECT_NAME} raylib)

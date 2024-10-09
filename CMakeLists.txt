@@ -36,6 +36,23 @@ add_executable(
         src/core/game.h
         src/core/grid.cpp
         src/core/grid.h
+
+        src/tetrominoes/tetromino.cpp
+        src/tetrominoes/tetromino.h
+        src/tetrominoes/tetromino_i.cpp
+        src/tetrominoes/tetromino_i.h
+        src/tetrominoes/tetromino_o.cpp
+        src/tetrominoes/tetromino_o.h
+        src/tetrominoes/tetromino_t.cpp
+        src/tetrominoes/tetromino_t.h
+        src/tetrominoes/tetromino_s.cpp
+        src/tetrominoes/tetromino_s.h
+        src/tetrominoes/tetromino_z.cpp
+        src/tetrominoes/tetromino_z.h
+        src/tetrominoes/tetromino_j.cpp
+        src/tetrominoes/tetromino_j.h
+        src/tetrominoes/tetromino_l.cpp
+        src/tetrominoes/tetromino_l.h
 )
 
 target_link_libraries(${PROJECT_NAME} raylib)
